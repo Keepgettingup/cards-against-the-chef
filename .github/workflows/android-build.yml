@@ -37,4 +37,4 @@ jobs:
         
     - name: Download URL
       run: |
-        echo "í¾‰ APK will be available in the Actions tab!"
+        echo "ðŸŽ‰ APK will be available in the Actions tab!"
