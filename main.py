@@ -1213,7 +1213,7 @@ class CardsAgainstTheChefApp(App):
     
     def load_menu_music(self):
         """Load the Gyros im Rösti music."""
-        music_path = "../Gyros_im_Rosti.mp3"
+        music_path = "Gyros_im_Rosti.mp3"
         try:
             self.menu_music = SoundLoader.load(music_path)
             if self.menu_music:
