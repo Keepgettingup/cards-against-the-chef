@@ -15,20 +15,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
-        
-    - name: Install dependencies
+    - name: Build APK with Docker
       run: |
-        pip install buildozer kivy
-        sudo apt-get update
-        sudo apt-get install -y cython3
-        
-    - name: Build APK
-      run: |
-        buildozer android debug
+        docker run --rm -v $(pwd):/app -w /app kivy/buildozer:latest buildozer android debug
         
     - name: Upload APK
       uses: actions/upload-artifact@v4
