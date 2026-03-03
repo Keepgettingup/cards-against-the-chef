@@ -1221,9 +1221,10 @@ class CardsAgainstTheChefApp(App):
                 self.menu_music.volume = 0.3  # 30% volume
                 print("Menu music loaded successfully")
             else:
-                print("Could not load menu music")
+                print("Could not load menu music - continuing without sound")
         except Exception as e:
-            print(f"Error loading menu music: {e}")
+            print(f"Error loading menu music: {e} - continuing without sound")
+            self.menu_music = None
     
     def play_menu_music(self):
         """Play the menu music."""
