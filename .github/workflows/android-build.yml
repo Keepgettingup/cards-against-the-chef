@@ -23,6 +23,8 @@ jobs:
     - name: Install dependencies
       run: |
         pip install buildozer kivy
+        sudo apt-get update
+        sudo apt-get install -y cython3
         
     - name: Build APK
       run: |
