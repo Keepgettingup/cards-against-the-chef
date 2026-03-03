@@ -19,7 +19,7 @@ source.include_exts = py,png,jpg,jpeg,kv,atlas,ico,mp3
 source.include_patterns = picsnlists/*.png,picsnlists/*.ico,picsnlists/*.ico,Instructions.png,Gyros_im_Rosti.mp3,picsnlists/*.txt
 
 # (list) Source files to exclude (let empty to not exclude anything)
-source.exclude_exts = spec,md,txt
+source.exclude_exts = spec,md
 
 # (list) List of directory to exclude (let empty to not exclude anything)
 source.exclude_dirs = .venv, __pycache__, .git, bin
